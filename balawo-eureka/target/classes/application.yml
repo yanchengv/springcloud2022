@@ -1,0 +1,19 @@
+server:
+  port: 9001
+
+eureka:
+  instance:
+    hostname: balawo-eureka-service #euraka服务端的实例名称
+  client:
+    register-with-eureka: false #false表示不向注册中心注册自己
+    fetch-registry: false #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
+    service-url:
+      #设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
+      defaultZone: http://localhost:9001/eureka/ #单机
+
+  server:
+    #关闭自我保护机制，保证不可用服务及时踢下线
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 60000
+
+
