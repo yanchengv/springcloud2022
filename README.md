@@ -21,7 +21,7 @@
 
 ## 1、获取token
 
-### http://localhost:9004/oauth/token  `post`
+### http://localhost:9000/oauth2/oauth/token  `post`
 
 获取token 模式是password
 

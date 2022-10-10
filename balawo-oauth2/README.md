@@ -1,6 +1,6 @@
 # 工程简介
 
-## balawo-oauth2 鉴权服务暂未配置和使用
+## balawo-oauth2 鉴权服务
 
 ## 1、获取token
 

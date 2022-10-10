@@ -16,7 +16,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  */
 @Configuration
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-//只有加了@EnableGlobalMethodSecurity(prePostEnabled=true) 那么在上面使用的 @PreAuthorize(“hasAuthority(‘admin’)”)才会生效
+//只有加了@EnableGlobalMethodSecurity(prePostEnabled=true) 那么在方法上面使用的 @PreAuthorize(“hasAuthority(‘admin’)”)才会生效
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     /**
