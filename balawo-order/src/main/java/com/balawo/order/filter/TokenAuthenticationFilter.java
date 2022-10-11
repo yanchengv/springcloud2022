@@ -3,6 +3,7 @@ package com.balawo.order.filter;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.balawo.order.model.LoginUser;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -20,6 +21,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.util.Base64;
 
 /**
@@ -48,11 +50,14 @@ public class TokenAuthenticationFilter extends OncePerRequestFilter {
                 //获取当前用户信息
                 String principal = userJsonObj.getString("principal");
                 //转换为loginUser
-                User loginUser = JSON.parseObject(principal, User.class);
+                //User user = JSON.parseObject(principal, User.class);
+                log.info("------{}",principal);
+                LoginUser user = JSON.parseObject(principal, (Type) LoginUser.class);
                 JSONArray authoritiesArray = userJsonObj.getJSONArray("authorities");
                 String[] authorities = authoritiesArray.toArray(new String[authoritiesArray.size()]);
+                log.info("loginUser------{}",user);
                 //形成Spring Security的Authentication对象，这样可在项目方法中使用权限校验和获取当前登录用
-                UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(loginUser, null, AuthorityUtils.createAuthorityList(authorities));
+                UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(user, null, AuthorityUtils.createAuthorityList(authorities));
                 authenticationToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(httpServletRequest));
                 SecurityContextHolder.getContext().setAuthentication(authenticationToken);
             }

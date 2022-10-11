@@ -78,8 +78,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         services.setSupportRefreshToken(true);
         //令牌服务
         services.setTokenStore(tokenStore);
-        //access_token的过期时间
-        services.setAccessTokenValiditySeconds(60 * 60);
+        //access_token的过期时间 2小时
+        services.setAccessTokenValiditySeconds(60 * 60 * 2);
         //refresh_token的过期时间
         services.setRefreshTokenValiditySeconds(60 * 60 * 24 * 3);
         return services;

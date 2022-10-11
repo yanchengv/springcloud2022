@@ -1,6 +1,6 @@
 package com.balawo.oauth2.service;
 
-import org.springframework.security.core.userdetails.User;
+import com.balawo.common.model.LoginUser;
 
 /**
  * @author yan
@@ -8,5 +8,5 @@ import org.springframework.security.core.userdetails.User;
  */
 public interface OauthUserDetailsService {
 
-    User loadUserByUsername(String username);
+    LoginUser loadUserByUsername(String username);
 }

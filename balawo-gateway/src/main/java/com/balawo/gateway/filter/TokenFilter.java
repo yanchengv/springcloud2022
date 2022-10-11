@@ -1,6 +1,7 @@
 package com.balawo.gateway.filter;
 
 import com.alibaba.fastjson.JSON;
+import com.balawo.common.model.LoginUser;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
@@ -11,7 +12,6 @@ import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpRequestDecorator;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.OAuth2Request;
 import org.springframework.security.oauth2.provider.token.TokenStore;
@@ -87,12 +87,13 @@ public class TokenFilter implements GlobalFilter, Ordered {
         if (auth2Authentication == null) {
             return null;
         }
-        String clientId = auth2Authentication.getOAuth2Request().getClientId();
+        //String clientId = auth2Authentication.getOAuth2Request().getClientId();
         Authentication userAuthentication = auth2Authentication.getUserAuthentication();
-        String userInfoStr = clientId;
+        String userInfoStr = null;
         List<String> authorities = new ArrayList<>();
         if (userAuthentication != null) {
-            User user = (User) userAuthentication.getPrincipal();
+            log.info("getPrincipal===={}",userAuthentication.getPrincipal());
+            LoginUser user = JSON.parseObject(JSON.toJSONString(userAuthentication.getPrincipal()),LoginUser.class);
             userInfoStr = JSON.toJSONString(user);
             // 组装明文token，转发给微服务，放入header，名称为json-token
             userAuthentication.getAuthorities().stream().forEach(
