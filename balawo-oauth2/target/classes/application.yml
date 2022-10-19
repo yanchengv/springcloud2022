@@ -1,0 +1,31 @@
+server:
+  port: 9004
+
+eureka:
+  instance:
+    name: balawo-oauth2-service
+  client:
+    register-with-eureka: true #表示将自己向注册中心注册 默认true
+    fetchRegistry: true #是否从EurekaServer抓取已有的注册信息，默认为true,单点无所谓，集群必须设置为true才能配合使用ribbon使用负载均衡
+    service-url:
+      #设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
+      defaultZone: http://localhost:9001/eureka/ #单机版
+
+
+spring:
+  application:
+    name: balawo-oauth2
+  main:
+    allow-bean-definition-overriding: true
+  redis:
+    database: 0
+    host: localhost #加入哨兵后，此项可以不配置
+    port: 6379
+    password:  # 密码（默认为空）
+    timeout: 6000  # 连接超时时长（毫秒）
+    lettuce:
+      pool:
+        max-active: 1000  # 连接池最大连接数（使用负值表示没有限制）
+        max-wait: -1      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-idle: 10      # 连接池中的最大空闲连接
+        min-idle: 5       # 连接池中的最小空闲连接

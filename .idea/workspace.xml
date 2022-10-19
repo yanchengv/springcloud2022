@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62fd7d37-6233-4e8b-8006-9d667fea9dae" name="Default Changelist" comment="" />
+    <list default="true" id="62fd7d37-6233-4e8b-8006-9d667fea9dae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/balawo-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/balawo-eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balawo-eureka/src/test/java/com/balawo/eureka/EurekaApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/balawo-eureka/src/test/java/com/balawo/eureka/EurekaApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balawo-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/balawo-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balawo-gateway/src/test/java/com/balawo/gateway/GatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/balawo-gateway/src/test/java/com/balawo/gateway/GatewayApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balawo-oauth2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/balawo-oauth2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balawo-oauth2/src/test/java/com/balawo/oauth2/Oauth2ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/balawo-oauth2/src/test/java/com/balawo/oauth2/Oauth2ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balawo-order/src/test/java/com/balawo/order/OrderApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/balawo-order/src/test/java/com/balawo/order/OrderApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,9 +23,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -35,6 +53,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2FTrQP3Ip6MJd7dEQZlLDXxnKnm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -43,15 +62,35 @@
     <property name="ToolWindowAnt.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="settings.editor.selected.configurable" value="Settings.Markdown" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/balawo-gateway/src/main/java/com/balawo/gateway/exception/auth" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/balawo-gateway/src/main/java/com/balawo/gateway/exception/auth" />
+      <recent name="$PROJECT_DIR$/balawo-oauth2" />
+      <recent name="$PROJECT_DIR$/balawo-oauth/src/main/java/com/balawo/oauth" />
+      <recent name="$PROJECT_DIR$/balawo-oauth2/src/main/java/com/balawo/oauth2/service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.balawo.oauth2.model" />
+      <recent name="com.balawo.common.model" />
+      <recent name="com.balawo.gateway.model" />
+      <recent name="com.balawo.order.config" />
+      <recent name="com.balawo.oauth2.config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -63,7 +102,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="JUnit.OrderApplicationTests.test">
+    <configuration name="OrderApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="balawo-order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.balawo.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.balawo.order" />
+      <option name="MAIN_CLASS_NAME" value="com.balawo.order.OrderApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="balawo-eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.balawo.eureka.EurekaApplication" />
@@ -78,6 +133,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Oauth2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="balawo-oauth2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.balawo.oauth2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.balawo.oauth2.Oauth2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="balawo-order" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.balawo.order.OrderApplication" />
@@ -85,6 +153,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Oauth2Application" />
+        <item itemvalue="JUnit.OrderApplicationTests.test" />
+        <item itemvalue="Spring Boot.Oauth2Application" />
+        <item itemvalue="JUnit.OrderApplicationTests.test" />
+        <item itemvalue="Spring Boot.Oauth2Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <option name="contentProportion" value="0.1902064" />
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c9d11734" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c9d11734" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e5f87f24" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -96,11 +194,83 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664526897325</updated>
-      <workItem from="1664526902350" duration="12064000" />
+      <workItem from="1664526902350" duration="13936000" />
+      <workItem from="1665209782567" duration="62830000" />
     </task>
+    <task id="LOCAL-00001" summary="oauth2 获取token">
+      <created>1665367086335</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665367086336</updated>
+    </task>
+    <task id="LOCAL-00002" summary="oauth2 获取token">
+      <created>1665367362308</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665367362308</updated>
+    </task>
+    <task id="LOCAL-00003" summary="oauth2 获取token">
+      <created>1665367634022</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665367634022</updated>
+    </task>
+    <task id="LOCAL-00004" summary="oauth2 token鉴权服务">
+      <created>1665393504969</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665393504969</updated>
+    </task>
+    <task id="LOCAL-00005" summary="oauth2 token鉴权服务完成">
+      <created>1665474635441</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665474635441</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test 加上public">
+      <created>1666164696104</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666164696104</updated>
+    </task>
+    <task id="LOCAL-00007" summary="解决SpringBoot打包成jar后运行提示没有主清单属性">
+      <created>1666168450324</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666168450324</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="oauth2 获取token" />
+    <MESSAGE value="oauth2 token鉴权服务" />
+    <MESSAGE value="oauth2 token鉴权服务完成" />
+    <MESSAGE value="test 加上public" />
+    <MESSAGE value="解决SpringBoot打包成jar后运行提示没有主清单属性" />
+    <option name="LAST_COMMIT_MESSAGE" value="解决SpringBoot打包成jar后运行提示没有主清单属性" />
   </component>
 </project>

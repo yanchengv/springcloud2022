@@ -8,16 +8,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="balawo-eureka" />
-        <module name="balawo-order" />
         <module name="balawo-oauth2" />
         <module name="balawo-gateway" />
+        <module name="balawo-order" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="balawo-oauth" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="balawo-eureka" options="-parameters" />
       <module name="balawo-gateway" options="-parameters" />
+      <module name="balawo-oauth" options="-parameters" />
       <module name="balawo-oauth2" options="-parameters" />
       <module name="balawo-order" options="-parameters" />
     </option>
