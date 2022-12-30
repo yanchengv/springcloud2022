@@ -20,6 +20,7 @@
         <module>balawo-eureka</module>
         <module>balawo-oauth2</module>
         <module>balawo-order</module>
+        <module>balawo-rabbitmq</module>
     </modules>
     <packaging>pom</packaging>
 

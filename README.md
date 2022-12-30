@@ -4,6 +4,12 @@
 ### 启动工程后，访问：http://localhost:9001/，可以看到eureka后台管理界面
 ### http://localhost:9000是 gateway网关项目
 
+## v1.1版本功能
+### 新增rabbitmq微服务 
+### 1、使用死信实现延迟队列
+### 2、使用插件实现延迟队列rabbitmq_delayed_message_exchange
+#### 示例：创建消息=localhost:9004/produce/create
+    
 
 ## v1版本功能
 ### 创建了4个微服务 balawo-gateway、balawo-eureka、balawo-order、balawo-oauth2
